@@ -22,8 +22,8 @@ jobs:
 
     - name: Build documentation using MkDocs Action
 #      uses: mhausenblas/mkdocs-deploy-gh-pages@1.26
-#      uses: FagorHealthcare/mkdocs-deploy-gh-pages@HEAD
-      uses: peaceiris/actions-gh-pages@v3
+      uses: FagorHealthcare/mkdocs-deploy-gh-pages@HEAD
+#      uses: peaceiris/actions-gh-pages@v3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         CONFIG_FILE: mkdocs.yml
