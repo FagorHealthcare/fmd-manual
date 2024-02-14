@@ -1,5 +1,6 @@
 site_name: Medical Dispenser Online - Manual de usuario
 site_url: https://fagorhealthcare.github.io/fmd-manual/
+publish_dir: ./fagor/
 nav:
   - Activación del servicio: '1_activacion.md'
   - Gestión de tratamientos online: '2_categorias.md'
