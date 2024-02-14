@@ -1,0 +1,51 @@
+site_name: Medical Dispenser Online - Manual de usuario
+site_url: https://fagorhealthcare.github.io/fmd-manual/
+nav:
+  - Activación del servicio: '1_activacion.md'
+  - Gestión de tratamientos online: '2_categorias.md'
+  - Servicio de notificaciones: '3_notificaciones.md'
+copyright: Fagor Halthcare &copy; 2023
+theme:
+  name: material
+  font: false
+  logo:
+    images/fagor-medical-dispenser-logo.png
+  palette:
+    primary: blue
+  features:
+    - navigation.expand
+    - navigation.indexes
+    - navigation.sections
+#    - navigation.tabs
+    - toc.follow
+    - toc.integrate
+#    - navigation.instant
+    - navigation.footer
+extra:
+  generator: false
+  site:
+    client: CINFA
+plugins:
+  - search:
+      lang:
+        - es
+        - en
+  - markdownextradata
+  - i18n:
+      reconfigure_material: true
+      docs_structure: folder
+      reconfigure_search: true
+      languages:
+        - locale: es
+          name: Español
+          default: true
+          build: true
+        - locale: en
+          name: English
+          build: true
+          site_name: Medical Dispenser Online - User guide
+          nav_translations:
+            Inicio: Introduction
+            Activación del servicio: Service activation
+            Sincronización de categorías: Category synchronization
+            Acceso a la web: Web access
