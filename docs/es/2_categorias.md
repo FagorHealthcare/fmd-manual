@@ -29,7 +29,7 @@ Se puede acceder a la web pulsando el botón "Web" que aparece en la parte super
 
 ### Inicio sesión
 
-Como se ha indicado, se puede iniciar sesión con el perfil de farmacia o perfil de residencia (o de categoría). El usuario con perfil de residencia debe introducir el mismo nombre de usuario y contraseña que utiliza en el software FMD. Mientras que el perfil de residencia debe introducir como nombre de usuario y contraseña el mismo nombre de la categoría, en este caso "Categoria Prueba".
+Como se ha indicado, se puede iniciar sesión con el perfil de farmacia o perfil de residencia (o de categoría). El usuario con perfil de farmacia debe introducir el mismo nombre de usuario y contraseña que utiliza en el software FMD. Mientras que el perfil de residencia debe introducir como nombre de usuario y contraseña el mismo nombre de la categoría, en este caso "Categoria Prueba".
 
 Ambos tienen en común que hay que introducir un ID de farmacia, el cual lo encontramos en la pantalla donde anteriormente hemos conectado el FMD a la web.
 
@@ -62,7 +62,7 @@ Como se ha mencionado anteriormente, hay dos tipos de usuarios, el usuario de fa
 
 **Usuario con perfil de farmacéutico**
 
-El usuario con perfil de farmacia accede a la página web con el mismo usuario y contraseña que en el software FMD. Estas con las características de este usuario:
+El usuario con perfil de farmacia accede a la página web con el mismo usuario y contraseña que en el software FMD. Estas son las características de este usuario:
 
 1. Puede seleccionar entre las diferentes categorías que ha sincronizado la farmacia, y ver todos los pacientes y tratamientos que pertenecen a esas categorías.
 
