@@ -1,0 +1,770 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://fagorhealthcare.github.io/fmd-manual/en/2_categorias/">
+      
+      
+        <link rel="prev" href="../1_activacion/">
+      
+      
+        <link rel="next" href="../3_notificaciones/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
+    
+    
+      
+        <title>Gestión de tratamientos online - Medical Dispenser Online - User guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.79e020e9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a5377069.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sincronizacion-de-categoria" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Medical Dispenser Online - User guide" class="md-header__button md-logo" aria-label="Medical Dispenser Online - User guide" data-md-component="logo">
+      
+  <img src="../../images/fagor-medical-dispenser-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Medical Dispenser Online - User guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Gestión de tratamientos online
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../2_categorias/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Medical Dispenser Online - User guide" class="md-nav__button md-logo" aria-label="Medical Dispenser Online - User guide" data-md-component="logo">
+      
+  <img src="../../images/fagor-medical-dispenser-logo.png" alt="logo">
+
+    </a>
+    Medical Dispenser Online - User guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_activacion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Service activation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Gestión de tratamientos online
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Gestión de tratamientos online
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pasos-para-sincronizar" class="md-nav__link">
+    Pasos para sincronizar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceso-a-la-web" class="md-nav__link">
+    Acceso a la web
+  </a>
+  
+    <nav class="md-nav" aria-label="Acceso a la web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inicio-sesion" class="md-nav__link">
+    Inicio sesión
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-usuarios" class="md-nav__link">
+    Tipos de usuarios
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acciones-de-la-web" class="md-nav__link">
+    Acciones de la web
+  </a>
+  
+    <nav class="md-nav" aria-label="Acciones de la web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inicio" class="md-nav__link">
+    Inicio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pacientes" class="md-nav__link">
+    Pacientes
+  </a>
+  
+    <nav class="md-nav" aria-label="Pacientes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tratamientos" class="md-nav__link">
+    Tratamientos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cambios" class="md-nav__link">
+    Cambios
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#medicamentos" class="md-nav__link">
+    Medicamentos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validacion-de-propuestas-desde-fmd" class="md-nav__link">
+    Validación de propuestas desde FMD
+  </a>
+  
+    <nav class="md-nav" aria-label="Validación de propuestas desde FMD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pacientes-con-cambios" class="md-nav__link">
+    Pacientes con cambios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consulta-de-cambios-propuestos" class="md-nav__link">
+    Consulta de cambios propuestos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validarrechazar-los-cambios" class="md-nav__link">
+    Validar/rechazar los cambios
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_notificaciones/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Servicio de notificaciones
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="sincronizacion-de-categoria">Sincronización de categoría</h1>
+<p>Para poder trabajar sobre los pacientes y los tratamientos del FMD mediante el sistema online, debemos agrupar estos pacientes en una categoría, y sincronizar dicha categoría a la web. Cada categoría se sincroniza independientemente, es decir, en un mismo FMD puede haber categorías sincronizadas con la web, y categorías con las que se sigue trabajando en local.</p>
+<h2 id="pasos-para-sincronizar">Pasos para sincronizar</h2>
+<p>Para poder sincronizar una categoría hay que seguir los siguientes pasos:</p>
+<ol>
+<li>
+<p>Pulsar en <code>Categorías</code> y seleccionar la categoría deseada.</p>
+</li>
+<li>
+<p>Establecer el tipo de categoría a <code>Web</code></p>
+<p><img alt="Sincronización de categorías" src="../images/2_categorias_sincronizar.png" /></p>
+</li>
+</ol>
+<p>Los pacientes de esas categorías y sus tratamientos se sincronizarán con el sistema online.</p>
+<p><em>Se puede repetir este proceso con todas las categorías que sean necesarias. Distintos grupos de pacientes, distintas residencias, ...</em></p>
+<h2 id="acceso-a-la-web">Acceso a la web</h2>
+<p>Una vez se haya conectado la categoría a la web, podemos acceder a dicha categoría desde la página web con cualquier usuario de FMD que tenga rol de farmacéutico, o el usuario por defecto de la categoría.</p>
+<p>Se puede acceder a la web pulsando el botón "Web" que aparece en la parte superior derecha de la pantalla.</p>
+<p><img alt="Botón 'Web'" src="../images/1_activacion_boton_web.png" /></p>
+<h3 id="inicio-sesion">Inicio sesión</h3>
+<p>Como se ha indicado, se puede iniciar sesión con el perfil de farmacia o perfil de residencia (o de categoría). El usuario con perfil de farmacia debe introducir el mismo nombre de usuario y contraseña que utiliza en el software FMD. Mientras que el perfil de residencia debe introducir como nombre de usuario y contraseña el mismo nombre de la categoría, en este caso "Categoria Prueba".</p>
+<p>Ambos tienen en común que hay que introducir un ID de farmacia, el cual lo encontramos en la pantalla donde anteriormente hemos conectado el FMD a la web.</p>
+<p><img alt="Introducir código activación farmacia" src="../images/1_activacion_codigo_farmacia.png" /></p>
+<p><img alt="Pantalla login" src="../images/2_web_iniciar_sesion.png" /></p>
+<p><strong>Primer inicio de sesión</strong></p>
+<ol>
+<li>
+<p>La primera vez que cada usuario inicia sesión, se pide que se firmen los documentos correspondientes.</p>
+<p><img alt="Firma de documentos" src="../images/3_firmar_documentos.PNG" /></p>
+</li>
+<li>
+<p>Después, se pide restablecer la contraseña inicial, ya que la contraseña del usuario de residencia es la misma que el nombre de la categoría, y la contraseña del usuario de farmacia puede que no cumpla con los requisitos mínimos de seguridad de una contraseña. Para ello se pide rellanar estos datos.</p>
+<p><img alt="Introducir datos de farmacia" src="../images/3_rellenar_datos.PNG" /></p>
+</li>
+<li>
+<p>Se envía un correo con el enlace para restablecer la contraseña a la dirección de correo que se ha especificado anteriormente.</p>
+<p><img alt="Correo restablecer contraseña" src="../images/3_correo_restablecer_contrasena.png" /></p>
+</li>
+<li>
+<p>Iniciamos sesión con la nueva contraseña y vemos la página principal</p>
+<p><img alt="Página principal web" src="../images/3_pagina_inicio_resi.PNG" /></p>
+</li>
+</ol>
+<h3 id="tipos-de-usuarios">Tipos de usuarios</h3>
+<p>Como se ha mencionado anteriormente, hay dos tipos de usuarios, el usuario de farmacia y el usuario de residencia. Ambos tipos acceden a la misma página web con la misma interfaz, pero tienen roles diferentes como se explica a continuación.</p>
+<p><strong>Usuario con perfil de farmacéutico</strong></p>
+<p>El usuario con perfil de farmacia accede a la página web con el mismo usuario y contraseña que en el software FMD. Estas son las características de este usuario:</p>
+<ol>
+<li>
+<p>Puede seleccionar entre las diferentes categorías que ha sincronizado la farmacia, y ver todos los pacientes y tratamientos que pertenecen a esas categorías.</p>
+<p><img alt="Selección de categoría con perfil farmacia" src="../images/4_seleccionar_categor%C3%ADas.png" /></p>
+</li>
+<li>
+<p>Los cambios que realiza tanto de un paciente como de un tratamiento, se sincronizan al software FMD sin tener que ser validados en el FMD.</p>
+</li>
+<li>
+<p>Como los cambios realizados en el tratamiento entran directamente en el FMD, es obligatorio seleccionar la presentación exacta de un medicamento cuando se vaya a añadir al tratamiento</p>
+</li>
+</ol>
+<p><strong>Usuario con perfil de residencia</strong></p>
+<p>El usuario con perfil de residencia accede a la página web con el nombre de la categoría como nombre de usuario y contraseña, hasta que restablece la contraseña. Estas son sus características:</p>
+<ol>
+<li>
+<p>Solo puede acceder a su propia categoría, es decir, no tiene permiso de acceder a las demás categorías de la farmacia.</p>
+</li>
+<li>
+<p>Los cambios que realiza en los pacientes y los tratamientos quedan pendientes de validar, hasta que se aprueban en el software FMD. Es decir, cuando se hace un cambio, este queda como propuesto, y desde el FMD se puede validar o rechazar el cambio.</p>
+</li>
+<li>
+<p>Al añadir un medicamento nuevo al tratamiento, se puede seleccionar la presentación exacta del medicamento, o sino el grupo homogéneo. Desde la farmacia, cuando se vaya a validar ese cambio, se escoge una presentación de ese grupo homogéneo en base a su criterio.</p>
+</li>
+</ol>
+<h2 id="acciones-de-la-web">Acciones de la web</h2>
+<p>Estas son las diferentes acciones que se pueden realizar en la página web.</p>
+<h3 id="inicio">Inicio</h3>
+<p>En el apartado de inicio, podemos ver el estado general de la categoría, que consiste en una lista de los pacientes que tienen cambios pendientes de validar por la farmacia, o que han sido rechazados por la farmacia.</p>
+<p><img alt="Dashboard pacientes" src="../images/4_inicio.PNG" /></p>
+<h3 id="pacientes">Pacientes</h3>
+<p>En la pantalla de pacientes, vemos todos los pacientes que pertenecen a la categoría, tanto los que tienen cambios pendientes de validar, como los que están en un estado aceptado.</p>
+<p><img alt="Listado pacientes categoría" src="../images/4_lista_pacientes.PNG" /></p>
+<p><strong>Añadir paciente</strong></p>
+<p>Estos son los pasos a seguir para añadir un nuevo paciente a la categoría:</p>
+<ol>
+<li>
+<p>Pulsar el botón "Añadir paciente" en la pantalla de lista de pacientes.</p>
+<p><img alt="Botón 'Web'" src="../images/5_boton_anadir_paciente.png" /></p>
+</li>
+<li>
+<p>Rellenar los datos de la ficha de paciente, y añadir el paciente</p>
+<p><img alt="Botón 'Web'" src="../images/5_datos_anadir_paciente.PNG" /></p>
+</li>
+</ol>
+<p><strong>Editar, pausar y eliminar paciente</strong></p>
+<p>Para pausar un paciente (no activo en FMD), editar sus campos de la ficha, o eliminar de la categoría, tenemos tres botones en la parte superior derecha de la pantalla del paciente.</p>
+<p><img alt="Botón 'Web'" src="../images/5_editar_borrar_paciente.png" /></p>
+<h4 id="tratamientos">Tratamientos</h4>
+<p><strong>Añadir medicamento al tratamiento</strong></p>
+<p>Estos son los pasos a seguir para añadir un medicamento al tratamiento de un paciente:</p>
+<ol>
+<li>
+<p>Pulsar el botón "Añadir tratamiento"</p>
+<p><img alt="Botón 'Web'" src="../images/5_boton_anadir_tratamiento.png" /></p>
+</li>
+<li>
+<p>Pulsar el botón "Añadir medicamento"</p>
+<p><img alt="Botón 'Web'" src="../images/5_boton_anadir_medicamento.png" /></p>
+</li>
+<li>
+<p>Seleccionar el medicamento que se quiere añadir, por código nacional o por nombre. En caso de haber iniciado sesión con perfil de residencia, se puede seleccionar el grupo homogéneo</p>
+<p><img alt="Botón 'Web'" src="../images/5_seleccionar_medicamento.PNG" /></p>
+</li>
+<li>
+<p>Rellenar los datos del tratamiento, y seleccionar el tipo de posología</p>
+<ol>
+<li>
+<p>Posología diaria</p>
+<p>Se indica la frecuencia con la que se repiten las tomas, o los días de descanso por cada cierta cantidad de días.</p>
+<p><img alt="Botón 'Web'" src="../images/5_posologia_diaria.PNG" /></p>
+</li>
+<li>
+<p>Posología semanal</p>
+<p>Se pueden especificar las cantidades para todas las tomas de una semana.</p>
+<p><img alt="Botón 'Web'" src="../images/5_posologia_semanal.PNG" /></p>
+</li>
+<li>
+<p>Posología mensual</p>
+<p>Se especifican las tomas para pautas superiores a una semana</p>
+<p><img alt="Botón 'Web'" src="../images/5_posologia_mensual.PNG" /></p>
+</li>
+<li>
+<p>Otra</p>
+<p>Texto libre para posologías no emblistables</p>
+<p><img alt="Botón 'Web'" src="../images/5_posologia_otra.PNG" /></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Por último, hay que enviar la propuesta pulsando el botón rojo "Enviar"</p>
+<p><img alt="Botón 'Web'" src="../images/5_boton_enviar_propuesta.png" /></p>
+</li>
+<li>
+<p>Cuando se finaliza la propuesta, se puede ver el estado del paciente, en este caso "Pendiente", con los cambios correspondientes</p>
+<p><img alt="Botón 'Web'" src="../images/5_estado_propuesta.PNG" /></p>
+</li>
+</ol>
+<p><strong>Editar/borrar tratamiento</strong></p>
+<p>Para editar o borrar un medicamento de un tratamiento:</p>
+<ol>
+<li>
+<p>Pulsar el botón "Editar" que se encuentra arriba a la derecha del tratamiento</p>
+<p><img alt="Botón 'Web'" src="../images/5_editar_tratamiento.png" /></p>
+</li>
+<li>
+<p>En el medicamento que se quiere editar o borrar, pulsar el botón correspondiente</p>
+<p><img alt="Botón 'Web'" src="../images/5_editar_borrar_medicamento.png" /></p>
+</li>
+<li>
+<p>Enviar los cambios realizados con el botón rojo "Enviar"</p>
+</li>
+</ol>
+<h4 id="cambios">Cambios</h4>
+<p>En caso de que el cambio propuesto se valide desde FMD, podemos ver el cambio de estado de "Propuesto" a "Aceptado". Sin embargo, si el cambio se rechaza desde FMD, podemos ver el estado "Rechazado" con el mensaje con el que se ha rechazado desde el FMD.</p>
+<p><img alt="Botón 'Web'" src="../images/5_mensaje_rechazo.PNG" /></p>
+<p>En este caso, se puede editar el tratamiento y enviar la nueva propuesta, o volver a enviar la propuesta anterior con otro mensaje.</p>
+<p><img alt="Botón 'Web'" src="../images/5_enviar_propuesta_con_mensaje.PNG" /></p>
+<p><strong>Historial cambios</strong></p>
+<p>Todas las propuestas de cambio, validaciones y rechazos que se hagan, se guardan y se visualizan en la parte derecha del tratamiento. En este apartado se puede ver la acción realizada, el usuario que la ha realizado, el día y la hora, y el mensaje con el que se ha enviado, en caso de haberlo.</p>
+<p><img alt="Botón 'Web'" src="../images/5_historial_cambios.png" /></p>
+<h3 id="medicamentos">Medicamentos</h3>
+<p>En la pantalla de medicamentos podemos ver toda la lista de medicamentos que recogemos de la AEMPS, y se actualiza semanalmente. Podemos buscar un medicamento por grupo homogéneo, por nombre de la presentación o código nacional de la presentación, y consultar la ficha del medicamento en caso de querer ver más detalles acerca de este.</p>
+<p><img alt="Listado medicamentos" src="../images/4_lista_medicamentos.PNG" /></p>
+<h2 id="validacion-de-propuestas-desde-fmd">Validación de propuestas desde FMD</h2>
+<p>Una vez hayamos realizado los cambios correspondientes en la página web, podemos ver esos cambios desde la página web. Podemos ver o darnos cuenta de que hay un cambio mediante estas vías:</p>
+<ol>
+<li>
+<p>En cuanto haya un cambio en la página web, en un periodo corto de tiempo, aparecerá un indicador en la parte superior derecha de la pantalla. Si pulsamos el indicador, se nos abre la lista de categorías que contienen cambios pendientes de validar.</p>
+<p><img alt="Botón 'Web'" src="../images/FMD_indicador_cambios.png" /></p>
+</li>
+<li>
+<p>La segunda opción para ver si hay cambios propuestos es abriendo la lista de categorías directamente desde FMD. En esta lista podemos ver las categorías que no están conectadas a la web en gris, las que están conectadas y no tienen cambios pendientes en azul, y las que estásn conectadas y tienen cambios pendientes en rojo.</p>
+<p><img alt="Botón 'Web'" src="../images/FMD_estado_categorias.PNG" /></p>
+</li>
+<li>
+<p>Por último, podemos ver si hay cambios propuestos en caso de que vayamos a preparar una carga a un paciente de una categoría conectada, o vayamos a preparar cargas por categoría de una categoría conectada. Si el software deja preparar las cargas sin problemas, quiere decir que no había cambios pendientes de validar. Sin embargo, en caso de haber cambios, el software indica lo siguiente.</p>
+<p><img alt="Botón 'Web'" src="../images/FMD_indicador_cambios_carga.PNG" /></p>
+<p>En este caso, podemos continuar la carga sin validar los cambios (no se cargarían los nuevos cambios en el SPD), o podemos darle al botón de "Revisar" y validar los cambios antes de preparar la carga.</p>
+</li>
+</ol>
+<h3 id="pacientes-con-cambios">Pacientes con cambios</h3>
+<p>Una vez sepamos el estado de cada categoría, podemos ir a revisar los cambios siguiente estos pasos:</p>
+<ol>
+<li>
+<p>Seleccionar la categoría que queremos revisar, y en el menú izquierdo de la categoría pulsar el botón "Revisar"</p>
+<p><img alt="Botón 'Web'" src="../images/FMD_boton_revisar.png" /></p>
+</li>
+<li>
+<p>Veremos la lista de pacientes con cambios propuestos, rechazados o nuevos pacientes</p>
+<p><img alt="Botón 'Web'" src="../images/FMD_estado_pacientes.PNG" /></p>
+</li>
+<li>
+<p>Seleccionamos un paciente para ver sus cambios, y podemos ver los cambios en la ficha, los cambios en el tratamiento, y el histórico de comentarios o acciones que se han realizado sobre ese paciente.</p>
+</li>
+</ol>
+<h3 id="consulta-de-cambios-propuestos">Consulta de cambios propuestos</h3>
+<p>Para poder validar los cambios de un paciente, hay que tener en cuenta que se validan todos los cambios a la vez, es decir, no se pueden validar unos cambios y dejar otros sin validar. </p>
+<p><strong>Ficha de paciente</strong></p>
+<p>En caso de la ficha del paciente, podemos ver en la columna de la izquierda los datos del paciente actual en el FMD (campos vacíos en caso de que sea un nuevo paciente), y los datos nuevos introducidos en la página web, se ven en la columna de la derecha. Si hay algún cambio en uno de los campos, este campo se ve en color azul. En caso de que no haya ningún cambio en la ficha, esta pestáña no se muestra.</p>
+<p><img alt="Botón 'Web'" src="../images/FMD_cambios_ficha.PNG" /> </p>
+<p><strong>Tratamiento</strong></p>
+<p>Si hay algún cambio en el tratamiento, se muestra una pestaña de tratamiento, con todos los medicamentos. En la parte de arriba se muestran los medicamentos nuevos que se han introducido en la página web, los medicamentos que se han editado en la página web, y los medicamentos que se han borrado en la página web. Para ver el cambio que se ha realizado en alguno de los medicamentos, pulsamos sobre el medicamento de arriba, y en la parte inferior vemos el cambio propuesto, ya sea en la posología o en algún otro campo.</p>
+<p><img alt="Botón 'Web'" src="../images/FMD_cambios_tratamiento.PNG" /> </p>
+<p><strong>Medicamento nuevo</strong></p>
+<p>Los medicamentos nuevos que se han añadido desde la página web, pueden ser de tres tipos:</p>
+<ol>
+<li>
+<p>Medicamento con presentación concreta
+    Si desde la página web se ha añadido una presentación concreta de un medicamento, este aparece con un fondo sin color en el FMD, y se puede validar sin problemas</p>
+</li>
+<li>
+<p>Medicamento con presentación concreta, sin definir en el FMD
+    En caso de que se trate de una presentación que no lo tenemos definido en el FMD, el medicamento aparece con el fondo de color amarillo. En ese caso, tenemos que hacer doble click en el medicamento, y definir las propiedades del medicamento.</p>
+</li>
+<li>
+<p>Grupo homogéneo
+    En caso de que desde la página web se haya especificado un grupo homogéneo y no una presentación, vemos que el código nacional y la descripción del medicamento están vacías, y el color de fondo es naranja. Tenemos que hacer doble click, y especificar la presentación exacta de ese grupo homogéneo.</p>
+<p><img alt="Botón 'Web'" src="../images/FMD_seleccionar_med.PNG" /> 
+<img alt="Botón 'Web'" src="../images/FMD_estado_tratamiento.PNG" /> </p>
+</li>
+</ol>
+<p><strong>Comentarios</strong></p>
+<p>En la última pestaña de comentarios podemos ver el historial de comentarios y cambios que se han realizado sobre ese paciente, los nombres de los usuarios que lo han realizado, y la fecha en la que se ha realizado.</p>
+<p><img alt="Botón 'Web'" src="../images/FMD_comentarios.PNG" /> </p>
+<h3 id="validarrechazar-los-cambios">Validar/rechazar los cambios</h3>
+<p>Una vez hayamos definido los nuevos medicamentos, en caso de haberlos, podemos validar o rechazar los cambios. Si se validan los cambios, estos se modifican en el software FMD, y se podrían ver en las pantallas de ficha o tratamiento del paciente. En caso de querer rechazar los cambios, se pulsa el botón "Rechazar", y escribimos el comentario con el que queremos enviar el rechazo.</p>
+<p><img alt="Botón 'Web'" src="../images/FMD_enviar_rechazo.PNG" /> </p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../1_activacion/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Service activation">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Service activation
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../3_notificaciones/" class="md-footer__link md-footer__link--next" aria-label="Next: Servicio de notificaciones">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Servicio de notificaciones
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Fagor Halthcare &copy; 2023
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.indexes", "navigation.sections", "toc.follow", "toc.integrate", "navigation.footer"], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6eac0284.min.js"></script>
+      
+    
+  </body>
+</html>
